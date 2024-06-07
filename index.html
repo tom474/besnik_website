@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Besnik Website</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Besnik Website</title>
+
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="./assets/favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+
+		<!-- Reset CSS -->
+		<link rel="stylesheet" href="./assets/css/reset.css" />
+
+		<!-- Embed fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link rel="stylesheet" href="./assets/css/responsive.css" />
+	</head>
+	<body>
+		<!-- PC header -->
+		<header class="fixed-header">
+			<div class="content">
+				<!-- Navbar -->
+				<nav class="navbar">
+					<!-- Tablet/mobile menu -->
+					<label for="menu-checkbox" class="toggle-menu">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+							<path
+								fill="currentColor"
+								d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+							/>
+						</svg>
+					</label>
+
+					<!-- Logo -->
+					<a href="#">
+						<img class="logo" src="./assets/img/logo.svg" alt="Besnik." />
+					</a>
+
+					<!-- Navigation -->
+					<ul id="pc-nav">
+						<li><a href="#">Home</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#features">Features</a></li>
+						<li><a href="#resources">Resources</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li class="show-on-mobile separate">
+							<a href="#!">Sign in</a>
+						</li>
+						<li class="show-on-mobile"><a href="#!">Sign up</a></li>
+					</ul>
+
+					<!-- Action -->
+					<div class="actions">
+						<a href="#!" class="action-link">Sign in</a>
+						<a href="#!" class="btn action-btn">Sign up</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Tablet/mobile header -->
+		<header class="mobile-header">
+			<input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden />
+
+			<!-- Overlay -->
+			<label for="menu-checkbox" class="menu-overlay"></label>
+
+			<!-- Menu content -->
+			<div class="menu-drawer">
+				<!-- Logo -->
+				<a href="#">
+					<img src="./assets/img/logo.svg" alt="Besnik." />
+				</a>
+
+				<!-- Navigation -->
+				<ul id="mobile-nav"></ul>
+			</div>
+		</header>
+	</body>
 </html>
