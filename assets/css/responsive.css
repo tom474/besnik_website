@@ -94,6 +94,11 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .guide-item {
+        flex: 1;
+        margin: 0;
+    }
 }
 
 /* Tablet */
@@ -133,5 +138,14 @@
 
     .clients .images {
         row-gap: 20px;
+    }
+
+    .list-guide {
+        flex-direction: column;
+        row-gap: 60px;
+    }
+
+    .guide-cta {
+        margin-top: 60px;
     }
 }
