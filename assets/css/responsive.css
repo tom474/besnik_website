@@ -89,6 +89,11 @@
 		width: 80%;
 		margin: 30px auto auto;
 	}
+
+    .clients .images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 /* Tablet */
@@ -125,4 +130,8 @@
 	.hero-wrap .desc {
 		width: 100%;
 	}
+
+    .clients .images {
+        row-gap: 20px;
+    }
 }
