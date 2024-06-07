@@ -142,6 +142,10 @@
 	.stats .qty-desc {
 		font-size: 1.5rem;
 	}
+
+    .subscription .image {
+        display: none;
+    }
 }
 
 /* Tablet */
@@ -223,4 +227,12 @@
 		align-items: center;
 		row-gap: 60px;
 	}
+
+    .subscription .info {
+        padding: 32px;
+    }
+
+    .subscription .body {
+        height: auto;
+    }
 }
