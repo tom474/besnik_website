@@ -98,5 +98,50 @@
 				<ul id="mobile-nav"></ul>
 			</div>
 		</header>
+
+		<!-- Tablet/mobile header -->
+		<header class="mobile-header">
+			<input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden />
+
+			<!-- Overlay -->
+			<label for="menu-checkbox" class="menu-overlay"></label>
+
+			<!-- Menu content -->
+			<div class="menu-drawer">
+				<!-- Logo -->
+				<a href="#">
+					<img src="./assets/img/logo.svg" alt="Besnik." />
+				</a>
+
+				<!-- Navigation -->
+				<ul id="mobile-nav"></ul>
+			</div>
+		</header>
+
+		<main>
+			<!-- Hero -->
+			<div class="hero-wrap">
+				<div class="content">
+					<div class="info">
+						<p class="sub-title">Welcome to Besnik Agency</p>
+						<h1 class="title">Discover a place you'll love to live.</h1>
+						<p class="desc">
+							Get the best real estate deals first, before they hit the mass market! HOT FORECLOSURE DEALS
+							with one simple search
+						</p>
+						<a href="#!" class="btn hero-cta">More About Us</a>
+					</div>
+
+					<img src="./assets/img/hero-img.svg" alt="Discover a place you'll love to live." class="hero-img" />
+				</div>
+			</div>
+		</main>
+		<script>
+			const pcNav = document.querySelector("#pc-nav");
+			const mobileNav = document.querySelector("#mobile-nav");
+
+			// Copy from PC nav -> Mobile nav
+			mobileNav.innerHTML = pcNav.innerHTML;
+		</script>
 	</body>
 </html>
